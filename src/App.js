@@ -5,15 +5,11 @@ import axios from 'axios';
 import './App.css';
 
 const App = () => {
-  const [testResponse, setTestResponse] = useState('');
   const [products, setProducts] = useState([]);
   const [productCart, setProductCart] = useState([]); 
   const [newProductCart, setNewProductCart] = useState([]);
-  const [displayProducts, setDisplayProducts] = useState();
   const [isLoading, setIsLoading] = useState(false);
-      
-  const [quantity, setQuantity] = useState(1);
-  const [customerEmail, setCustomerEmail] = useState('jakevan100@gmail.com');
+
 
   const sellixApiKey = process.env.REACT_APP_SELLIX_API_KEY;
 

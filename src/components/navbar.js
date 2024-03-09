@@ -1,12 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState} from 'react';
 import '../App.css';
 
-
-import apex from '../images/apex.jpg'
-import dayz from '../images/dayz.jpg'
-import valorant from '../images/valorant.jpg'
-import rust from '../images/rust.jpg'
 
 const Navbar = ({cartInfo, handlePurchase, isLoading}) => {
   const [open, setOpen] = useState(false);
@@ -33,7 +27,7 @@ const Navbar = ({cartInfo, handlePurchase, isLoading}) => {
           {cartInfo.map((item) => {
               return (
                 <div className='cart-item'>
-                  <img src={`https://imagedelivery.net/95QNzrEeP7RU5l5WdbyrKw/${item.imgId}/public`} />
+                  <img src={`https://imagedelivery.net/95QNzrEeP7RU5l5WdbyrKw/${item.imgId}/public`} alt={item.title} />
                   <h1>{item.title} Key</h1>
                   <p>{item.unit_quantity}</p>
                 </div>
