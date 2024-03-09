@@ -78,8 +78,7 @@ console.log(productCart);
         }
       });
       const paymentUrl = response.data.data.url;
-      console.log(paymentUrl);
-      window.location.href = paymentUrl;
+      window.open(paymentUrl, '_blank');
     } catch (error) {
       console.error('Error creating payment:', error);
       // Handle error
