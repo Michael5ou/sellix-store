@@ -81,7 +81,6 @@ console.log(productCart);
       window.open(paymentUrl, '_blank');
     } catch (error) {
       console.error('Error creating payment:', error);
-      // Handle error
     }
 
     setIsLoading(false);

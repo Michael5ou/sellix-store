@@ -14,14 +14,10 @@ const Store = ({updateCart}) => {
     switch (slug) {
       case 'apex':
         return apex;
-      case 'dayz':
-        return dayz;
-      case 'valorant':
-        return valorant;
       case 'rust':
         return rust;
       default:
-        return null; // Return a default image or handle missing images
+        return null; 
     }
   };
 

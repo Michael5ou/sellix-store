@@ -12,8 +12,6 @@ const Navbar = ({cartInfo, handlePurchase, isLoading}) => {
     });
 
 
-
-
   return (
     <nav>
       <h1>Sellix Store Example</h1>
